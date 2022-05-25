@@ -1,0 +1,6 @@
+.c-advertising-section{
+   margin-bottom: 104px;
+   @include media-breakpoint-down(xl){
+      margin-bottom: 60px;
+   }
+}

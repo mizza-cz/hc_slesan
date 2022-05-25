@@ -1,0 +1,10 @@
+{% extends "@components/base/base.twig" %}
+
+{% set data = default %}
+{% set title = "Článek" %}
+
+{% block main %}
+   {% include "@components/post-section/post-section.twig" %}
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+
+{% endblock %}

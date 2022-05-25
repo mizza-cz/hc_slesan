@@ -1,0 +1,29 @@
+.breadcrumbs{
+   display: flex;
+   margin-bottom: 40px;
+   flex-wrap: wrap;
+   li{
+      position: relative;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 152%;
+      display: block;
+   }
+   a{
+      color: var(--color-red);
+   }
+   span{
+      color: var(--color-light);
+   }
+   li+li{
+      padding-left: 22px;
+      margin-left: 16px;
+      &::before{
+         content: '|';
+         position: absolute;
+         color: var(--color-gray);
+         left: 0;
+         top: 0;
+      }
+   }
+}

@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "01.0_homepage" %}
+
+{% block main %}
+   {% include "@components/topstory-section/topstory-section.twig" %}
+   <div class="bg-dark py-lg-10 py-5">
+      {% include "@components/posts-section/posts-section.twig" %}
+      {% include "@components/advertising-section/advertising-section.twig" %}
+      {% include "@components/players-slider-section/players-slider-section.twig" %}
+   </div>
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+.c-partners-section{
+   padding: 66px 0;
+   .header-section{
+      color: var(--color-dark);
+   }
+  &__inner{
+   a{
+      width: 100%;
+      height: 100%;
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+  }
+}

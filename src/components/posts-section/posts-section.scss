@@ -1,0 +1,36 @@
+.c-posts-section{
+   padding-top: 32px;
+   margin-bottom: 80px;
+   @include media-breakpoint-down(xl){
+      margin-bottom: 40px;
+   }
+}
+.post{
+   color: var(--color-light);
+   &__img{
+      height: 260px;
+      margin-bottom: 16px;
+      width: 100%;
+      img{
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+      }
+   }
+   &__info{
+      padding: 0 12px 12px;
+   }
+   &__link{
+      text-decoration: transparent;
+      .h4{
+         text-decoration-color: transparent !important;
+         text-decoration: underline;
+         transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+      }
+      &:hover{
+         .h4{
+            text-decoration-color: var(--color-light) !important;
+         }
+      }
+   }
+}

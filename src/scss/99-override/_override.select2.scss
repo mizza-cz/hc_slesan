@@ -1,0 +1,110 @@
+/*! purgecss start ignore */
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  color: var(--color-dark);
+  background: rgba(237, 29, 36, 0.2);
+  transition: all .3s;
+}
+.select2-container {
+  .select2-selection--single {
+    height: auto;
+    padding: 1px 44px 2px 24px;
+    border-color: var(--color-red);
+    outline: solid transparent 1px;
+    transition: all 0.3s;
+    background-color: transparent;
+  }
+}
+.select2-container--open {
+  .select2-selection--single {
+    border-color: var(--color-red);
+    outline-color: var(--color-red);
+  }
+}
+.-error {
+  .select2-container {
+    .select2-selection--single {
+      border-color: var(--color-red);
+      outline-color: var(--color-red);
+    }
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: var(--color-red);
+  }
+  .select2-container {
+    .select2-selection--single {
+      background-color: var(--color-red);
+      border-color: var(--color-red);
+      b {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  width: 10px;
+  height: 10px;
+  b {
+    background-image: url("../images/ico/chevron.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 10px;
+    height: 8px;
+  }
+}
+.select2-dropdown {
+  top: 2px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.select2-results__options {
+  > li {
+    padding: 12px 16px;
+    > span {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+  .select2-results__option--selected {
+    background: rgba(237, 29, 36, 0.3);
+    font-weight: 600;
+  }
+  .select2-results__option--highlighted  {
+    background: rgba(237, 29, 36, 0.3);
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: var( --color-red);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  padding: 0;
+}
+.select2-container--default .select2-selection--single {
+  border: 1px solid var(--color-red);
+  height: 46px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+}
+/*! purgecss end ignore */

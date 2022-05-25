@@ -1,0 +1,14 @@
+.decorate{
+   position: relative;
+   padding-bottom: 8px;
+   &::before{
+      content: '';
+      z-index: 1;
+      position: absolute;
+      height: 8px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, rgba(237, 29, 36, 0.8) 0%, rgba(255, 241, 0, 0.8) 100%);
+   }
+ }

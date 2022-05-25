@@ -1,0 +1,16 @@
+.slick-arrow{
+  border: none;
+  background: transparent;
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  img{
+    width: 28px;
+    height: 28px;
+  }
+}
+.slider__btnnext{
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}

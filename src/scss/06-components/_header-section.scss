@@ -1,0 +1,23 @@
+.header-section{
+   display: flex;
+   justify-content: space-between;
+   color: var(--color-light);
+   flex-wrap: wrap;
+   align-items: flex-end;
+   &__subtitle{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0.54em;
+      text-transform: uppercase;
+      margin-right: -10px;
+      text-align: right;
+      margin-bottom: 16px;
+      @include media-breakpoint-down(xl){
+         margin-right: 0;
+      }
+   }
+   .h1{
+      margin-bottom: 16px;
+   }
+}

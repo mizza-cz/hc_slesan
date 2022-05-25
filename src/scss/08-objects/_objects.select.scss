@@ -1,0 +1,19 @@
+.o-select {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  span{
+    margin: 0;
+  }
+}
+.-error {
+  .o-select__label {
+    color: var(--color-red);
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+}
