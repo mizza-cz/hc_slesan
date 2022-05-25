@@ -1,0 +1,64 @@
+.c-match-detail{
+   background-color: var(--color-bg-yellow);
+   margin: 48px 0;
+   &__inner{
+      max-width: 824px;
+      padding: 32px 16px;
+      margin: 0 auto;
+   }
+   &__info{
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      @include media-breakpoint-down(md){
+         flex-wrap: wrap;
+      }
+   }
+   &__team{
+      max-width: 260px;
+      width: 100%;
+      @include media-breakpoint-down(md){
+         max-width: 100%;
+         width: auto;
+      }
+      .h4{
+         @include media-breakpoint-down(md){
+            display: none;
+         }
+      }
+   }
+   &__img{
+      width: 80px;
+      height: 85px;
+      margin: 0 auto 16px;
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+   &__date{
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 152%;
+      letter-spacing: 0.04em;
+   }
+   &__result{
+      max-width: 160px;
+      width: 100%;
+      @include media-breakpoint-down(sm){
+         max-width: 100%;
+         order: -1;
+         margin-bottom: 24px;
+      }
+      span{
+         display: block;
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 120%;
+         margin-top: 6px;
+      }
+   }
+}
