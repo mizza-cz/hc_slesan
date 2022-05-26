@@ -1,0 +1,12 @@
+{% extends "@components/base/base.twig" %}
+
+{% set data = default %}
+{% set title = "Hráč-detail" %}
+
+{% block main %}
+   <div class="bg-dark pb-10">
+      {% include "@components/player-detail-section/player-detail-section.twig" %}
+      {% include "@components/team-slider-section/team-slider-section.twig" %}
+   </div>
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+{% endblock %}
