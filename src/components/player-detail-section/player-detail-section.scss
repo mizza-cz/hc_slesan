@@ -1,8 +1,10 @@
 .c-player-detail-section{
    color: var(--color-light);
-   padding-bottom: 64px;
-   @include media-breakpoint-down(lg){
-      padding-bottom: 32px;
+   .players-slider{
+      margin-top: 80px;
+      @include media-breakpoint-down(lg){
+         margin-top: 40px;
+      }
    }
 }
 .c-player-detail{

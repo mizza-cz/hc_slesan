@@ -1,13 +1,6 @@
 .c-team{
-   &-section{
-      background-color: var(--color-dark);
-      padding-top: 32px;
-      padding-bottom: 32px;
-      .h3{
-         color: var(--color-light);
-      }
-   }
    &__inner{
       margin-top: 48px;
+      color: var(--color-light);
    }
 }
