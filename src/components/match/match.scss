@@ -7,9 +7,7 @@
    display: block;
    transition: all .3s;
    &:hover{
-      box-shadow: 0px 1px 34px 1px rgba(237,29,36,0.83);
-   -webkit-box-shadow: 0px 1px 34px 1px rgba(237,29,36,0.83);
-   -moz-box-shadow: 0px 1px 34px 1px rgba(237,29,36,0.83);
+      box-shadow: 0px 1px 34px 1px rgba(237,29,36,0.4);
    }
    &__info{
       display: flex;
