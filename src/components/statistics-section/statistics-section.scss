@@ -1,0 +1,29 @@
+.c-statistics-section{
+   tr{
+      th,td{
+         text-align: right;
+      }
+      th:first-child,
+      td:first-child{
+         width: 50px;
+         text-align: left;
+      }
+      th:nth-of-type(2),
+      td:nth-of-type(2){
+         text-align: left;
+      }
+   }
+   .h1,
+   .breadcrumbs span{
+      color: var(--color-dark);
+   }
+}
+.c-statistics__descr{
+   font-size: 12px;
+   line-height: 152%;
+   margin-top: 70px;
+   @include media-breakpoint-down(lg){
+      margin-top: 32px;
+      margin-bottom: 24px;
+   }
+}

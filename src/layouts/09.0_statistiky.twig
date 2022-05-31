@@ -1,0 +1,9 @@
+{% extends "@components/base/base.twig" %}
+
+{% set data = default %}
+{% set title = "Statistiky" %}
+
+{% block main %}
+   {% include "@components/statistics-section/statistics-section.twig" %}
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+{% endblock %}

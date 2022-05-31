@@ -1,0 +1,9 @@
+{% extends "@components/base/base.twig" %}
+
+{% set data = default %}
+{% set title = "Fotogalerie" %}
+
+{% block main %}
+   {% include "@components/gallery-section/gallery-section.twig" %}
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+{% endblock %}

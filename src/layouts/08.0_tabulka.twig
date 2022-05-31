@@ -1,0 +1,9 @@
+{% extends "@components/base/base.twig" %}
+
+{% set data = default %}
+{% set title = "Tabulka" %}
+
+{% block main %}
+   {% include "@components/table-section/table-section.twig" %}
+   {% include "@components/partners-slider-section/partners-slider-section.twig" %}
+{% endblock %}
