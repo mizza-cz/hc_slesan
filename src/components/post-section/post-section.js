@@ -30,7 +30,7 @@ if($('.js-gallery').length) {
                showHideOpacity: true
            }
            // Initialize PhotoSwipe
-           var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+           const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
            gallery.init();
        });
    });
