@@ -2,7 +2,7 @@
    margin: 0 auto;
    .active {
       max-width: 50%;
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
         max-width: 100%;
       }
    }
