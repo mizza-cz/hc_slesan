@@ -1,22 +1,27 @@
-.c-players-slider-section{
-   .player{
-      &__number{
-         display: none;
+.c-players-slider-section {
+  .player {
+    &__number {
+      display: none;
+    }
+    &:hover {
+      .h2 {
+        text-decoration-color: var(--color-light);
       }
-      .h2{
-         padding: 16px 24px 22px;
-         font-weight: 400;
-         span{
-            font-weight: 600;
-            margin-top: 8px;
-         }
+    }
+    .h2 {
+      padding: 16px 24px 22px;
+      font-weight: 400;
+      span {
+        font-weight: 600;
+        margin-top: 8px;
       }
-      &__img{
-         max-width: 392px;
-         height: 400px;
-         &::before{
-            height: 8px;
-         }
+    }
+    &__img {
+      max-width: 392px;
+      height: 400px;
+      &::before {
+        height: 8px;
       }
-   }
+    }
+  }
 }

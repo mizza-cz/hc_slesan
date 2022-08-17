@@ -1,37 +1,37 @@
-.c-table-section{
-   color: var(--color-light);
-   .table tbody tr:nth-child(2n) td{
-      background: var(--color-dark);
-   }
-   .c-statistics__descr{
-      margin-top: 0;
-      @include media-breakpoint-down(lg){
-         margin-top: 24px;
+.c-table-section {
+  .h1,
+  .breadcrumbs span {
+    color: var(--color-dark);
+  }
+
+  .c-statistics__descr {
+    margin-top: 0;
+    @include media-breakpoint-down(lg) {
+      margin-top: 24px;
+    }
+  }
+
+  table {
+    tr {
+      th,
+      td {
+        text-align: right;
       }
-   }
-   .c-statistics__descr span{
-      color: var(--color-red);
-   }
-   table{
-      tr{
-         th,td{
-            text-align: right;
-         }
-         th:first-child,
-         td:first-child{
-            width: 50px;
-            text-align: left;
-         }
-         th:nth-of-type(2),
-         td:nth-of-type(2){
-            text-align: left;
-         }
+      th:first-child,
+      td:first-child {
+        width: 50px;
+        text-align: left;
       }
-      th{
-         text-transform: uppercase;
+      th:nth-of-type(2),
+      td:nth-of-type(2) {
+        text-align: left;
       }
-      th,td{
-         color: var(--color-light);
-      }
-   }
+    }
+    th {
+      text-transform: uppercase;
+    }
+  }
+}
+.slezan {
+  color: var(--color-red);
 }
