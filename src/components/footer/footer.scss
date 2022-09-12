@@ -1,103 +1,102 @@
-.footer{
-   padding: 40px 0px;
-   color: var(--color-light);
-   a{
-      text-decoration-color: transparent;
-   }
-   &__logo{
-      display: flex;
+.footer {
+  padding: 40px 0px;
+  color: var(--color-light);
+  &__col-right,
+  &__col-left {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-breakpoint-down(xl) {
       align-items: center;
-      img{
-         width: 118px;
-         height: 125px;
-         display: block;
-         @include media-breakpoint-down(sm){
-            margin: 0 auto;
-            padding: 0 12px;
-         }
+      min-height: auto;
+    }
+  }
+  a {
+    text-decoration-color: transparent;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 32px;
+    }
+    img {
+      width: 118px;
+      height: 125px;
+      display: block;
+      @include media-breakpoint-down(sm) {
+        margin: 0 auto;
+        padding: 0 12px;
       }
-      .h2{
-         max-width: 208px;
-         margin-left: 24px;
-         @include media-breakpoint-down(sm){
-            display: none;
-         }
+    }
+    .h2 {
+      max-width: 208px;
+      margin-left: 24px;
+      @include media-breakpoint-down(sm) {
       }
-   }
-   &__top{
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 66px;
-      flex-wrap: wrap;
-      @include media-breakpoint-down(sm){
-         justify-content: center;
-         margin-bottom: 24px;
+    }
+  }
+  ul {
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(xl) {
+      justify-content: center;
+    }
+    li {
+      padding: 0 20px;
+      margin-bottom: 16px;
+    }
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      &:hover {
+        text-decoration-color: var(--color-light);
       }
-   }
-   &__contacts{
-      margin-right: 18px;
-      margin-top: 18px;
-      @include media-breakpoint-down(sm){
-         margin-right: 0;
+    }
+  }
+  &__contacts {
+    margin-right: 18px;
+    margin-top: 18px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 32px;
+      margin-right: 0;
+      text-align: center;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 145.8%;
+      letter-spacing: 0.025em;
+      margin-bottom: 4px;
+    }
+    a {
+      display: block;
+      line-height: 22.72px;
+      font-size: 16px;
+      letter-spacing: -0.1%;
+      font-weight: 400;
+      margin-bottom: 4px;
+      &:hover {
+        text-decoration-color: var(--color-light);
       }
-      h6{
-         font-weight: 700;
-         font-size: 20px;
-         line-height: 145.8%;
-         letter-spacing: 0.025em;
-         margin-bottom: 4px;
-      }
-      a{
-         display: block;
-         line-height: 22.72px;
-         font-size: 16px;
-         letter-spacing: -0.1%;
-         font-weight: 400;
-         margin-bottom: 4px;
-         &:hover{
-            text-decoration-color: var(--color-light);
-         }
-      }
-   }
-   &__bottom{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
-      @include media-breakpoint-down(xl){
-         justify-content: center;
-      }
-      ul{
-         display: flex;
-         margin-left: -20px;
-         margin-right: -20px;
-         flex-wrap: wrap;
-         @include media-breakpoint-down(xl){
-            justify-content: center;
-         }
-         li{
-            padding: 0 20px;
-            margin-bottom: 16px;
-         }
-         a{
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            &:hover{
-               text-decoration-color: var(--color-light);
-            }
-         }
-      }
-   }
+    }
+  }
 }
-.copyright{
-   display: flex;
-   align-items: center;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   margin-bottom: 16px;
-   a{
-      padding: 0 12px;
-   }
+.copyright {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  a {
+    padding: 0 12px;
+  }
 }

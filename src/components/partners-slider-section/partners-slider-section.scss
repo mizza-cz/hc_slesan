@@ -1,14 +1,16 @@
-.c-partners-slider-section{
-   padding-top: 55px;
-   padding-bottom: 74px;
-   border-top: 8px solid var(--color-dark);
-   @include media-breakpoint-down(lg){
-      padding: 40px 0;
-   }
-   .slick-track{
-      margin: 0;
-   }
-   .header-section{
-      color: var(--color-dark);
-   }
+.c-partners-slider-section {
+  padding-top: 55px;
+  padding-bottom: 74px;
+  border-top: 8px solid var(--color-dark);
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+  .slick-track {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .header-section {
+    color: var(--color-dark);
+  }
 }
