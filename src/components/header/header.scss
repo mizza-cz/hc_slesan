@@ -64,6 +64,13 @@
   padding-left: 100px;
   align-items: center;
   justify-content: space-between;
+  .link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
   @include media-breakpoint-down(lg) {
     padding: 20px 16px;
     justify-content: flex-end;
@@ -81,6 +88,13 @@
   &-collapse {
     display: flex;
     justify-content: center;
+    .link {
+      display: none;
+      @include media-breakpoint-down(lg) {
+        display: block;
+        margin-bottom: 24px;
+      }
+    }
   }
 }
 .is-nav-open .header .navbar-expand-md .navbar-collapse {

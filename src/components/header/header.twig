@@ -4,9 +4,7 @@
       <a class="header__logo" href="">
         <img src="images/content/logo.png" loading="lazy" alt="logo" />
       </a>
-      <button class="c-header__opener js-header__opener" type="button">
-        <span></span>
-      </button>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
@@ -81,10 +79,16 @@
             <a class="nav-link" href="#"> Archiv </a>
           </li>
         </ul>
+        <a class="link link--border" href="#">A-tým</a>
+
         <div class="social-mob">
           {% include "@components/social/social.twig" %}
         </div>
       </div>
+      <button class="c-header__opener js-header__opener" type="button">
+        <span></span>
+      </button>
+      <a class="link link--border" href="#">A-tým</a>
       {% include "@components/social/social.twig" %}
     </nav>
   </div>
