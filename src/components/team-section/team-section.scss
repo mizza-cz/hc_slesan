@@ -7,7 +7,7 @@
 .c-team-juniors-section {
   .player {
     &__img {
-      background-color: #fff;
+      background-color: var(--color-dark);
       display: flex;
       justify-content: center;
 
@@ -16,14 +16,31 @@
       svg path {
         padding-top: 10px;
         width: 140px;
-        height: 150px;
+        height: 140px;
         object-fit: contain;
       }
       img {
         width: 180px;
         height: 180px;
         padding-top: 0;
+        background-color: var(--color-dark);
       }
     }
+  }
+}
+
+.shild-wrap {
+  width: 300px;
+  height: 200px;
+  padding-left: 74px;
+  svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  g {
+  }
+  path,
+  svg {
+    fill: #fff;
   }
 }
