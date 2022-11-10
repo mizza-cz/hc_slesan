@@ -1,0 +1,44 @@
+.history-slider {
+  background-color: var(--color-bg-yellow);
+  .slider__btnprev {
+    left: -2.5rem;
+    top: 38%;
+    transform: rotate(-180deg);
+    @include media-breakpoint-down(xl) {
+      left: -8px;
+      top: 40%;
+    }
+  }
+  .slider__btnnext {
+    @include media-breakpoint-down(xl) {
+      right: -10px;
+    }
+  }
+  .slick-arrow img {
+    @include media-breakpoint-down(xl) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__item {
+    display: block;
+    text-decoration-color: transparent;
+    padding: 0 16px;
+    @include media-breakpoint-down(lg) {
+      padding: 0 8px;
+    }
+    .decorate {
+      padding: 16px;
+      background-color: #fff;
+    }
+    span {
+      margin-top: 8px;
+      display: block;
+      color: var(--color-red);
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 120%;
+      background: transparent;
+    }
+  }
+}
