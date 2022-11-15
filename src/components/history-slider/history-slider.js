@@ -3,9 +3,9 @@ $(".js-history-slider").slick({
   slidesToScroll: 1,
   arrows: true,
   nextArrow:
-    ' <button class="slider__btn  slider__btnnext"><img src="images/ico/arrow-slider.svg" alt = "" ></button>',
+    ' <button class="slider__btn  slider__btnnext"><img src="/images/ico/arrow-slider.svg" alt = "" ></button>',
   prevArrow:
-    ' <button class="slider__btn  slider__btnprev"><img src="images/ico/arrow-slider.svg" alt = "" ></button>',
+    ' <button class="slider__btn  slider__btnprev"><img src="/images/ico/arrow-slider.svg" alt = "" ></button>',
   responsive: [
     {
       breakpoint: 879,
