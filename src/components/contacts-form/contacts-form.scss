@@ -1,6 +1,7 @@
 .c-contacts-form {
   padding-top: 3.5rem;
   padding-bottom: 60px;
+  color: var(--color-light);
   &__inner {
     padding-top: 20px;
     @include media-breakpoint-down(md) {
@@ -19,6 +20,7 @@
     margin: 0;
     font-weight: 400;
     margin-top: 2px;
+    border: none;
   }
   .link {
     margin-top: 24px;
