@@ -1,0 +1,26 @@
+.c-contacts-form {
+  padding-top: 3.5rem;
+  padding-bottom: 60px;
+  &__inner {
+    padding-top: 20px;
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+    }
+  }
+  label {
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: 500;
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0;
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  .link {
+    margin-top: 24px;
+  }
+}

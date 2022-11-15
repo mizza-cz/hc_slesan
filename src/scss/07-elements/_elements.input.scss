@@ -1,0 +1,11 @@
+input {
+  font-size: 0.875rem;
+  border: 0.125rem solid var(--color-red);
+  height: 2.0625rem;
+  border-radius: 0;
+  outline: none;
+  color: var(--color-dark);
+  &::placeholder {
+    color: var(--color-dark);
+  }
+}
